@@ -1,18 +1,14 @@
 <?php
 
-$name = 'Marco';
+$text = "Io dico cacca quanto mi pare e piace, capito? Dov'è la libertà di parola, eh!? Sai che ti dico? cacca, cacca e stra-cacca HAHAHA!!!";
+
+$textLength = strlen($text);
+
+echo $text;
+echo "<br>";
+echo "<br>";
+echo "Il testo è lungo: ";
+echo $textLength;
+echo " caratteri.";
 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Ciao, mi chiamo <?php echo $name; ?></h1>
-</body>
-</html>
