@@ -34,6 +34,7 @@ $testo_censurato = str_replace('cacca', '*****', $testo_originale, $parole_censu
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,25 +42,17 @@ $testo_censurato = str_replace('cacca', '*****', $testo_originale, $parole_censu
     <link rel="stylesheet" href="style.css">
     <title>Badwords</title>
 </head>
+
 <body>
 
     <div class="container">
+        <h2 class="original">Testo originale:</h2>
 
-        <h2 class="original">
-            Testo originale:
-        </h2>
+        <p><?php echo $testo_originale ?></p>
 
-        <p>
-            <?php echo $testo_originale ?>
-        </p>
+        <h2 class="censored">Testo censurato:</h2>
 
-        <h2 class="censored">
-            Testo censurato:
-        </h2>
-
-        <p>
-            <?php echo $testo_censurato ?>
-        </p>
+        <p><?php echo $testo_censurato ?></p>
 
         <br>
 
@@ -76,8 +69,8 @@ $testo_censurato = str_replace('cacca', '*****', $testo_originale, $parole_censu
                 <?php echo $parole_censurate ?> parole!
             </span>
         </h2>
-        
     </div>
 
 </body>
+
 </html>
